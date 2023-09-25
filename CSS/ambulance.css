@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --blue: blue;
+    --black: #444;
+    --light-color: #000;
+    --box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+    --text-shadow: .4rem .4rem 0 rgba(0, 0, 0, .2);
+    --border: .2rem solid #2f4f42;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
+}
+
+body {
+    background: #48cae4;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+section:nth-child(even) {
+    background: #48cae4;
+}
+
+.header {
+    padding: .5rem 9%;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+}
+
+.header .logo .brand {
+    font-size: 1.9rem;
+    color: var(--black);
+    position: relative;
+    right: 4rem;
+    bottom: 2.3rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.header .logo img{
+    width: 7rem;
+    height: 7rem;
+    position: relative;
+    right: 2rem;
+    top: .5rem;
+    bottom: .5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.header .after .me {
+    font-size: 2rem;
+    justify-content: space-between;
+    padding: 1rem;
+    position: relative;
+    left: 75rem;
+    color: var(--light-color);
+}
+
+.header .after i{
+    position: relative;
+    left: 75rem;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: var(--light-color);
+    margin-left: 2rem;
+    position: relative;
+    left: -10rem;
+}
+    
+.header .navbar a:hover{
+    color: #48cae4;
+}
+
+#menu-btn {
+    font-size: 2.5rem;
+    border-radius: .5rem;
+    color: var(--black);
+    padding: 0 1.5rem;
+    cursor: pointer;
+    display: none;
+    position: relative;
+    left: 0rem;
+}
+
+#menu-btn:hover {
+    background: #48cae4;
+    color: #fff;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 19rem;
+    background: #00CED1;
+}
+
+.home .content {
+    flex: 1 1 45rem;
+}
+
+.home .box i{
+    color: #fff;
+    font-size: 4.5rem;
+    margin-top: -8rem;
+}
+
+.home .heading {
+    position: relative;
+    top: -5rem;
+    left: -1rem;
+    padding-top: 2rem;
+    text-shadow: var(--text-shadow);
+    text-transform: uppercase;
+    color: var(--black);
+    font-size: 5rem;
+    letter-spacing: .4rem;
+}
+
+.home .image {
+    flex: 1 1 45rem;
+}
+
+.home .box h3 {
+    margin-top: -3rem;
+    padding-left: 8rem;
+}
+
+.home .box h1 {
+    font-size: 2rem;
+}
+
+.home .image img {
+    display: block;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 2rem;
+}
+
+.home .content {
+    flex: 1 1 45rem;
+} 
+
+.home .content p {
+    font-size: 1.7rem;
+    color: var(--light-color);
+    line-height: 1.8;
+    padding: 1rem 0;
+    position: relative;
+    left: -1rem;
+    text-indent: 50px;
+    margin-left: 3rem;
+}
+
+.heading span {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.contact .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 2rem;
+}
+
+.contact .box-container .box h3 {
+    font-size: 2.5rem;
+    color: var(--black);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.contact .box-container .box a {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.contact .box-container .box a i {
+    position: relative;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.contact .box-container .box a:hover i {
+    padding-right: 2rem;
+}
+
+.contact .credit {
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--light-color);
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.contact .credit span {
+    color: #fff;
+}
+
+@media (max-width: 1090px) {
+    .header .after i {
+        position: relative;
+        left: 65rem;
+    }
+}
+
+@media (max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1rem
+    }
+
+    section {
+        padding: 2rem;
+    }
+    
+    .header nav {
+        margin-right: 2rem;
+        justify-content: space-between;
+    }
+
+    .header .after i {
+        margin-right: -8rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #menu-btn{
+        display: initial;
+        padding-top: 1rem;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 115%; right: 2rem;
+        border-radius: .5rem;
+        box-shadow: var(--box-shadow);
+        width: 20rem;
+        border: var(--border);
+        background: #fff;
+        transform: scale(0);
+        opacity: 0;
+        transform-origin: top right;
+        transition: none;
+    }
+
+    .header .after i {
+        position: relative;
+        left: 20rem;
+    }
+
+    .header .navbar.active {
+        transform: scale(1);
+        opacity: 1;
+        transition: .2s ease-out;
+    }
+
+    .header .navbar a{
+        font-size: 2rem;
+        display: block;
+        padding: 1rem;
+        margin-left: -5rem;
+        position: relative;
+        left: 10rem;
+    }
+
+    .home .box .image img {
+        margin-left: 15rem;
+    }
+
+    .home .content h2 {
+        letter-spacing: none;
+        word-spacing: none;
+        margin-left: 13rem;
+    }
+
+    .brand {
+        margin-left: .5rem;
+    }
+
+    .logo {
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 660px) {
+    html {
+        font-size: 50%;
+    }
+    section {
+        padding: 2rem;
+    }
+    .header .after i{
+        position: relative;
+        left: 15rem;
+    }
+}
+
+@media (max-width: 550px) {
+    html {
+        font-size: 50%;
+    }
+    section {
+        padding: 2rem;
+    }
+    .header .after i{
+        position: relative;
+        left: 10rem;
+    }
+}
+
+@media (max-width: 450px){
+    html {
+        font-size: 50%;
+    }
+    section {
+        padding: 2rem;
+    }
+    .header {
+        position: fixed;
+        top: -1rem;
+    }
+    .header .after i{
+        /* position: relative;
+        top: 0;
+        left: 4rem; */
+        margin-right: 9rem;
+    }
+    .home i{
+        font-size: 3rem;
+    }
+    .home .heading{
+        font-size: 3rem;
+        padding-top: 3.6rem;
+        padding-left: 1rem;
+    }
+
+    .home .box .image img {
+        margin-left: 10rem;
+    }
+}
+
+@media (max-width: 380px) {
+    html {
+        font-size: 50%;
+    }
+    section {
+        padding: 2rem;
+    }
+    .header .logo img {
+        margin-left: -1rem;
+    }
+    .header .logo .brand {
+        margin-left: 0rem;
+    }
+    .header .after i {
+        margin-right: 9.5rem;
+        padding-top: 1rem;
+        font-size: 1.5rem;
+    }
+}
