@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --black: #444;
+    --light-color: #000;
+    --box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+    --text-shadow: .4rem .4rem 0 rgba(0, 0, 0, .2);
+    --border: .2rem solid #2f4f42;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
+}
+
+body {
+    background-image: radial-gradient(circle at 50% 50%, #b8ffdb 0, #a5ffda 10%, #90fcda 20%, #76f5da 30%, #54efdb 40%, #0fe7dc 50%, #00dfde 60%, #00d8e2 70%, #00d1e6 80%, #00caec 90%, #00c3f1 100%);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.header {
+    padding: .5rem 9%;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+}
+
+.header .logo .brand {
+    font-size: 1.9rem;
+    color: var(--black);
+    position: relative;
+    right: 4rem;
+    bottom: 2.3rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.header .logo img{
+    width: 7rem;
+    height: 7rem;
+    position: relative;
+    right: 2rem;
+    top: .5rem;
+    bottom: .5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.header .after i{
+    position: relative;
+    left: 45rem;
+    font-size: 1.5rem;
+}
+
+.header .after span {
+    position: relative;
+    left: .5rem;
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: var(--light-color);
+    position: relative;
+    left: -15rem;
+}
+    
+.header .navbar a:hover{
+    color: #48cae4;
+}
+
+#menu-btn {
+    font-size: 2.5rem;
+    border-radius: .5rem;
+    color: var(--black);
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    display: none;
+    position: relative;
+    left: 0rem;
+    top: .3rem;
+}
+
+#menu-btn:hover {
+    background: #48cae4;
+    color: #fff;
+}
+
+.home {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+.home .box {
+    font-size: 2rem;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: 1rem;
+    padding-top: 5rem;
+    padding-left: 0rem;
+    padding-bottom: 0rem;
+    background: #fff;
+    margin-top: 17rem;
+    margin-right: 27rem;
+    margin-left: 27rem;
+}
+
+.home .box .container h3{
+    font-size: 3rem;
+    padding-top: 0rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.home .box .logo {
+    position: relative;
+    left: -1em;
+    margin-top: -3rem;
+    margin-bottom: -2rem;
+}
+
+.home .box .logo img{
+    width: 9rem;
+    position: relative;
+    left: 10em;
+}
+
+.home .box .logo .brand {
+    position: relative;
+    top: -3.5rem;
+    left: 17rem;
+}
+
+.home .box pre {
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    padding-top: 2rem;
+    padding-left: 6rem;
+}
+
+@media (max-width: 1024px) {
+    .header .after i {
+        position: absolute;
+        left: 89%;
+        top: 3.6rem;
+    }
+    .header .navbar {
+        position: absolute;
+        left: 92%;
+    }
+    .header .logo {
+        position: relative;
+        left: -7rem;
+    }
+    .home .box {
+        width: 60%;
+        margin-left: 15rem;
+        margin-top: 25rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .logo {
+        position: relative;
+        left: -5rem;
+    }
+    .header .after i {
+        position: absolute;
+        left: 87%;
+    }
+    .header .navbar {
+        position: absolute;
+        left: 95%;
+    }
+    .home .box {
+        width: 85%;
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .header .logo {
+        position: relative;
+        left: -2.5rem;
+    }
+    .header .after i {
+        position: absolute;
+        left: 77%;
+    }
+    .home .box {
+        width: 100%;
+        margin-left: 0rem;
+    }
+    .home .box .container h3{
+        font-size: 2rem;
+        padding-top: 0rem;
+        text-align: center;
+        text-decoration: underline;
+    }
+    .home .box .logo {
+        position: relative;
+        left: -12.5rem;
+    }
+    .home .box pre {
+        font-size: 1.2rem;
+        padding-top: 2rem;
+        margin-left: -4rem;
+    }
+}
+
+@media (max-width: 375px){
+    section {
+        padding: 3rem;
+    }
+    .header .logo{
+        position: relative;
+        left: -2.3rem;
+    }
+    .header .after i{
+        position: absolute;
+        left: 75%;
+    }
+    .home .box {
+        width: 110%;
+        margin-left: -2rem;
+    }
+    .home .box .logo {
+        position: relative;
+        left: -13rem;
+    }
+    .home .box pre {
+        font-size: 1.2rem;
+        padding-top: 2rem;
+        margin-left: -5rem;
+    }
+}
+
+@media (max-width: 320px){
+    .header .logo{
+        position: relative;
+        top: -.2rem;
+    }
+    .header .logo .brand{
+        font-size: 1.6rem;
+    }
+    .header .navbar {
+        position: absolute;
+        left: 98%;
+    }
+    .header .after i {
+        position: absolute;
+        left: 72%;
+    }
+    .home .box {
+        width: 115%;
+        margin-left: -5;
+    }
+    .home .box .logo {
+        position: relative;
+        left: -15.5rem;
+    }
+    .home .box pre {
+        font-size: 1.2rem;
+        padding-top: 2rem;
+        margin-left: -6rem;
+    }
+}
