@@ -1,150 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
 }
-.akun{
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../image/R.jpg);
-    background-position: center;
-    background-size: cover;
-    position: absolute;
+body{
+  background-image: url(../image/R.jpg);
+  overflow: hidden;
+}
+::selection{
+  background: rgba(26,188,156,0.3);
 }
 .container{
-    width: 380px;
-    height: 450px;
-    position: relative;
-    margin: 6% auto;
-    background: #fff;
-    padding: 5px;
-    overflow: hidden;
+  max-width: 440px;
+  padding: 0 20px;
+  margin: 170px auto;
 }
-.button-box{
-    width: 220px;
-    margin: 35px auto;
-    position: relative;
-    box-shadow: 0 0 20px 9px #8ecae6;
-    border-radius: 30px;
+.wrapper{
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
 }
-.masuk{
-    padding: 10px 30px;
-    cursor: pointer;
-    background: transparent;
-    border: 0;
-    outline: none;
-    position: relative;
+.wrapper .title{
+  height: 90px;
+  background: white;
+  border-radius: 5px 5px 0 0;
+  color: black;
+  font-size: 30px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-#btn{
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: 110px;
-    height: 100%;
-    background: linear-gradient(to right, #219ebc, #8ecae6);
-    border-radius: 30px;
-    transition: .5s;
+.wrapper form{
+  padding: 30px 25px 25px 25px;
 }
-.input-group{
-    top: 125px;
-    position: absolute;
-    width: 280px;
-    transition: .5s;
+.wrapper form .row{
+  height: 45px;
+  margin-bottom: 15px;
+  position: relative;
 }
-.input-field{
-    width: 100%;
-    padding: 10px 0;
-    margin: 5px 0;
-    border-left: 0;
-    border-top: 0;
-    border-right: 0;
-    border-bottom: 1px solid #999;
-    outline: none;
-    background: transparent;
+.wrapper form .row input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 60px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  font-size: 16px;
+  transition: all 0.3s ease;
 }
-.submit-btn{
-    width: 85%;
-    padding: 10px 30px;
-    cursor: pointer;
-    display: block;
-    margin: auto;
-    background: linear-gradient(to right, #219ebc, #8ecae6);
-    border: 0;
-    outline: none;
-    border-radius: 30px;
+form .row input:focus{
+  border-color: #16a085;
+  box-shadow: inset 0px 0px 2px 2px rgba(26,188,156,0.25);
 }
-.chech-box{
-    margin: 30px 10px 30px 0;
+form .row input::placeholder{
+  color: #999;
 }
-span{
-    color: #777;
-    font-size: 12px;
-    bottom: 68px;
-    position: absolute;
+.wrapper form .row i{
+  position: absolute;
+  width: 47px;
+  height: 100%;
+  color: #fff;
+  font-size: 18px;
+  background: #16a085;
+  border: 1px solid #16a085;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-#login{
-    left: 50px;
+.wrapper form .pass{
+  margin: -8px 0 20px 0;
 }
-#register{
-    left: 450px;
+.wrapper form .pass a{
+  color: #16a085;
+  font-size: 17px;
+  text-decoration: none;
 }
-
-@media (max-width: 768px){
-    .container {
-        position: relative;
-        top: 1rem;
-    }
-
-    .akun {
-        height: 100%;
-        width: 100%;
-    }
+.wrapper form .pass a:hover{
+  text-decoration: underline;
 }
-
-@media (max-width: 450px){
-    .container {
-        position: relative;
-        top: 2rem;
-    }
-
-    .akun {
-        height: 100%;
-        width: 100%;
-    }
+.wrapper form #buttonLogin{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 0px;
+  background: #16a085;
+  border: 1px solid #16a085;
+  cursor: pointer;
+  width: 350px;
+  padding: 10px;
+  border-radius: 7px;
 }
-
-@media (max-width: 390px){
-    .container {
-        position: relative;
-        top: 5rem;
-    }
-
-    .akun {
-        height: 120%;
-        width: 120%;
-    }
+form #buttonLogin:hover{
+  background: #12876f;
 }
-
-@media (max-width: 370px){
-    .container {
-        position: relative;
-        top: 5rem;
-    }
-
-    .akun {
-        height: 120%;
-        width: 120%;
-    }
+.wrapper form .signup-link{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 17px;
 }
-
-@media (max-width: 330px){
-    .container {
-        position: relative;
-        top: 7rem;
-    }
-
-    .akun {
-        height: 140%;
-        width: 140%;
-    }
+.wrapper form .signup-link a{
+  color: #16a085;
+  text-decoration: none;
+}
+form .signup-link a:hover{
+  text-decoration: underline;
 }
