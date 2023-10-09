@@ -5,7 +5,7 @@ var password = document.getElementById("password")
 btn.addEventListener("click", login);
     
         function login() {
-            fetch("https://be-jayapura-27-production.up.railway.app/login.html", {
+            fetch("https://be-jayapura-27-production.up.railway.app/login", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",

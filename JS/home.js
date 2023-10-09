@@ -32,6 +32,33 @@ function removeDisabled() {
     pilih.removeAttribute("disabled");
 }
 
+function booking() {
+  fetch("https://be-jayapura-27-production.up.railway.app/booking", {
+          method: "POST",
+          headers: {
+              "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+              nama: nama.value,
+              noHP: noHP.value,
+              email: email.value,
+              service: service.value
+          })
+      })
+      .then(function (response) {
+          if (response.ok) {
+              return response.json();
+          }
+          return Promise.reject(response);
+      }).then(function (data) {
+          alert(data.message);
+          localStorage.setItem("user", JSON.stringify(data.data))
+          window.location.replace("https://be-jayapura-27-production.up.railway.app/riwayat_booking.html")
+      }).catch(function (error) {
+          console.log(error);
+      });
+        }
+
 function myFunction() {
   var nama = document.getElementById("nama").value;
   var phone = document.getElementById("phone").value;
