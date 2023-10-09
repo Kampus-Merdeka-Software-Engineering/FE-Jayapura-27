@@ -29,9 +29,10 @@ btn.addEventListener("click", login);
                 });
             }
 
-            function myLogin() {
+                var btn = document.getElementById("buttonLogin").value;
                 var username = document.getElementById("username").value;
                 var password = document.getElementById("password").value;
+                btn.addEventListener("click", login);
               
                 if (username === "" || password === "") {
                   swal({
@@ -48,4 +49,3 @@ btn.addEventListener("click", login);
                     button: "Ok",
                   });
                 }
-              }
