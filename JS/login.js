@@ -5,7 +5,7 @@ var password = document.getElementById("password")
 btn.addEventListener("click", login);
     
         function login() {
-            fetch("http://localhost:3000/static/login.html", {
+            fetch("https://be-jayapura-27-production.up.railway.app/login.html", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -23,7 +23,7 @@ btn.addEventListener("click", login);
                 }).then(function (data) {
                     alert(data.message);
                     localStorage.setItem("users", JSON.stringify(data.data))
-                    window.location.replace("http://localhost:3000/static/home.html")
+                    window.location.replace("https://be-jayapura-27-production.up.railway.app/home.html")
                 }).catch(function (error) {
                     console.log(error);
                 });

@@ -6,7 +6,7 @@ var password = document.getElementById("password")
 btn.addEventListener("click", registrasi)
 
 function registrasi() {
-    fetch("http://localhost:3000/static/registrasi", {
+    fetch("https://be-jayapura-27-production.up.railway.app/registrasi", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -25,7 +25,7 @@ function registrasi() {
         }).then(function (data) {
             alert(data.message);
             if (confirm(data.message)) {
-                window.location.replace("http://localhost:3000/index.html")
+                window.location.replace("https://be-jayapura-27-production.up.railway.app/index.html")
             }
         }).catch(function (error) {
             console.log(error);
