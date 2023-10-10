@@ -22,10 +22,11 @@ btn.addEventListener("click", login);
                     }
                     return Promise.reject(response);
                 }).then(function (data) {
-                    alert(data.message);
-                    localStorage.setItem("users", JSON.stringify(data.email=email))
-                    window.location.replace("https://be-jayapura-27-production.up.railway.app/home.html")
-                }).catch(function (error) {
+                  alert(data.message);
+                  localStorage.setItem("users", JSON.stringify(data.data));
+                  localStorage.setItem("email", "testaja@gmail.com"); // Isi dengan email yang diinginkan
+                  window.location.replace("https://be-jayapura-27-production.up.railway.app/home.html");
+              }).catch(function (error) {
                     console.log(error);
                 });
             }
