@@ -56,8 +56,8 @@ function booking() {
           window.location.replace("https://be-jayapura-27-production.up.railway.app/riwayat_booking.html")
       }).catch(function (error) {
           console.log(error);
-      });
-        }
+   });
+}
 
 function myFunction() {
   var nama = document.getElementById("nama").value;
