@@ -26,7 +26,7 @@ btn.addEventListener("click", login);
                   localStorage.setItem("users", JSON.stringify(data.data));
                   // Fetch the email from the API response
                   var email = data.email;
-                  localStorage.setItem("email", "hehe@gmail.com"); // Store the email in localStorage
+                  localStorage.setItem("email", email); // Store the email in localStorage
                   window.location.replace("https://be-jayapura-27-production.up.railway.app/home.html");
               }).catch(function (error) {
                     console.log(error);
