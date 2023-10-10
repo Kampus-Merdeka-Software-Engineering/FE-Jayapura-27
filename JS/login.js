@@ -30,7 +30,7 @@ btn.addEventListener("click", login);
             }
             
           function myButton(){
-              var btn = document.getElementById("buttonLogin").value;
+              // var btnLogin = document.getElementById("buttonLogin").value;
               var username = document.getElementById("username").value;
               var password = document.getElementById("password").value;
                 
