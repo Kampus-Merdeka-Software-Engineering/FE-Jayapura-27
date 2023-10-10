@@ -28,26 +28,26 @@ btn.addEventListener("click", login);
                     console.log(error);
                 });
             }
-                function myButton(){
-                  var btn = document.getElementById("buttonLogin").value;
-                  var username = document.getElementById("username").value;
-                  var password = document.getElementById("password").value;
-                  btn.addEventListener("click", login);
+            
+          function myButton(){
+              var btn = document.getElementById("buttonLogin").value;
+              var username = document.getElementById("username").value;
+              var password = document.getElementById("password").value;
                 
-                  if (username === "" || password === "") {
-                    swal({
-                      title: "Error!",
-                      text: "Please fill in all data first!",
-                      icon: "warning",
-                      button: "Ok",
-                    });
-                  } else {
-                    swal({
-                      title: "Susccessfully Submitted!",
-                      text: "Your data has been entered successfully",
-                      icon: "success",
-                      button: "Ok",
-                    });
-                  }
+              if (username === "" || password === "") {
+                swal({
+                  title: "Error!",
+                  text: "Please fill in all data first!",
+                  icon: "warning",
+                  button: "Ok",
+                });
+              } else {
+                  swal({
+                    title: "Susccessfully Submitted!",
+                    text: "Your data has been entered successfully",
+                    icon: "success",
+                    button: "Ok",
+                  });
                 }
+              }
                 
