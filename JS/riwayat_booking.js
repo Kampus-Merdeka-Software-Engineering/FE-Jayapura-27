@@ -36,6 +36,6 @@ function riwayat() {
         }).catch(function (error) {
             console.log(error);
         })
-    }
+}
 
 document.addEventListener('DOMContentLoaded', riwayat);
