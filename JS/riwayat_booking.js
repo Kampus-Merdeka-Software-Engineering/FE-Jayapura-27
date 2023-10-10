@@ -8,10 +8,7 @@ function riwayat() {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                nama: nama.value,
-                noHP: noHP.value,
                 email: email.value,
-                service: service.value
             })
         // .then(function (response) {
         //     if (response.ok) {
