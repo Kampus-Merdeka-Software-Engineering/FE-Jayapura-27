@@ -24,9 +24,9 @@ function registrasi() {
             return Promise.reject(response);
         }).then(function (data) {
             alert(data.message);
-            if (confirm(data.message)) {
-                window.location.replace("https://be-jayapura-27-production.up.railway.app/login.html")
-            }
+            // if (confirm(data.message)) {
+            //     window.location.replace("https://be-jayapura-27-production.up.railway.app/login.html")
+            // }
         }).catch(function (error) {
             console.log(error);
         })
