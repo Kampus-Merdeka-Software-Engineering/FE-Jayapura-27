@@ -1,7 +1,7 @@
 var btn = document.getElementById("buttonLogin")
 var username = document.getElementById("username")
 var password = document.getElementById("password")
-var email = data.email;
+
 
 btn.addEventListener("click", login);
     
@@ -31,27 +31,5 @@ btn.addEventListener("click", login);
               }).catch(function (error) {
                     console.log(error);
                 });
-            }
-            
-          // function myButton(){
-          //     var btnLogin = document.getElementById("buttonLogin").value;
-          //     var username = document.getElementById("username").value;
-          //     var password = document.getElementById("password").value;
-                
-          //     if (username === "" || password === "") {
-          //       swal({
-          //         title: "Error!",
-          //         text: "Please fill in all data first!",
-          //         icon: "warning",
-          //         button: "Ok",
-          //       });
-          //     } else {
-          //         swal({
-          //           title: "Susccessfully Submitted!",
-          //           text: "Your data has been entered successfully",
-          //           icon: "success",
-          //           button: "Ok",
-          //         });
-          //       }
-          //     }
+            }    
                 
