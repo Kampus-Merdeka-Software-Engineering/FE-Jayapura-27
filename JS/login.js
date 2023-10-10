@@ -23,7 +23,7 @@ btn.addEventListener("click", login);
                 }).then(function (data) {
                     alert(data.message);
                     localStorage.setItem("users", JSON.stringify(data.data))
-                    window.location.replace("./home.html")
+                    window.location.replace("https://be-jayapura-27-production.up.railway.app/home.html")
                 }).catch(function (error) {
                     console.log(error);
                 });
