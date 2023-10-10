@@ -2,7 +2,7 @@ function riwayat() {
     const ls = localStorage.getItem('booking')
     const data = JSON.parse(ls)
     var email = document.getElementById("email")
-    fetch("https://nodejs-production-176d.up.railway.app/riwayat", {
+    fetch("https://be-jayapura-27-production.up.railway.app/riwayat", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -20,13 +20,13 @@ function riwayat() {
         //     return Promise.reject(response);
             .then(response => response.json())
             .then(data => {
-            const bodyElement = document.querySelector('body pre');
-            bodyElement.querySelector('nama').textContent = data.nama;
-            bodyElement.querySelector('noHP').textContent = data.numPhone;
-            bodyElement.querySelector('email').textContent = data.email;
-            bodyElement.querySelector('service').textContent = data.services;
-            bodyElement.querySelector('note').textContent = data.note;
-            bodyElement.querySelector('date').textContent = data.date;
+            const bodyElement = document.querySelector('.home');
+            bodyElement.querySelectorId('nama').textContent = data.nama;
+            bodyElement.querySelectorId('noHP').textContent = data.numPhone;
+            bodyElement.querySelectorId('email').textContent = data.email;
+            bodyElement.querySelectorId('service').textContent = data.services;
+            bodyElement.querySelectorId('note').textContent = data.note;
+            bodyElement.querySelectoId('date').textContent = data.date;
         })
         }).then(function (data) {
             alert(data.message);
