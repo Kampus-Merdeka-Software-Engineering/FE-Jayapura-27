@@ -1,7 +1,7 @@
 var btn = document.getElementById("buttonLogin")
 var username = document.getElementById("username")
 var password = document.getElementById("password")
-var email = "testaja@gmail.com"
+var email = data.email;
 
 btn.addEventListener("click", login);
     
@@ -24,7 +24,9 @@ btn.addEventListener("click", login);
                 }).then(function (data) {
                   alert(data.message);
                   localStorage.setItem("users", JSON.stringify(data.data));
-                  localStorage.setItem("email", "testaja@gmail.com"); // Isi dengan email yang diinginkan
+                  // Fetch the email from the API response
+                  var email = data.email;
+                  localStorage.setItem("email", "hehe@gmail.com"); // Store the email in localStorage
                   window.location.replace("https://be-jayapura-27-production.up.railway.app/home.html");
               }).catch(function (error) {
                     console.log(error);
