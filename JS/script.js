@@ -32,11 +32,11 @@ function booking() {
       }).then(function (data) {
           alert(data.message);
           localStorage.setItem("user", JSON.stringify(data.data))
-          window.location.replace("https://be-jayapura-27-production.up.railway.app/home.html")
+          window.location.replace("https://be-jayapura-27-production.up.railway.app/login.html")
       }).catch(function (error) {
           console.log(error);
-      });
-        }
+   });
+}
 
 
 
